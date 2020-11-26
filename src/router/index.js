@@ -65,26 +65,26 @@ export const constantRoutes = [
       {
         path: 'user',
         name: 'User',
-        component: () => import('@/views/user/index'),
+        component: () => import('@/views/users/index'),
         meta: { title: '用户管理', icon: 'table' },
         children: [
           {
             path: 'list',
             name: 'List',
-            component: () => import('@/views/user/list'),
+            component: () => import('@/views/users/list'),
             meta: { title: '用户列表', icon: 'table' }
           },
           {
             path: 'update/:id',
             name: 'Update',
-            component: () => import('@/views/user/handle'),
+            component: () => import('@/views/users/handle'),
             meta: { title: '修改用户', icon: 'table' },
             hidden: true
           },
           {
             path: 'add',
             name: 'Add',
-            component: () => import('@/views/user/handle'),
+            component: () => import('@/views/users/handle'),
             meta: { title: '添加用户', icon: 'table' }
           }
         ]
