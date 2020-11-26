@@ -38,7 +38,6 @@
         element-loading-text="数据加载中"
         fit
         highlight-current-row
-        m
         :data="list"
         border
         style="width: 100%"
